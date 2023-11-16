@@ -1,38 +1,61 @@
-﻿using Ships.Model.ShipComponents;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ships.Model
 {
     public class Ship
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public Hull Hull { get; set; }
-        public Tower Tower { get; set; }
+        private int Id { get; set; }
+        private string Name { get; set; }
+        private Class ShipClass { get; set; }
+        private bool IsCapital { get; set; }
+        private Hull Hull { get; set; }
+        private Turret Turret { get; set; }
+        private int TotalAmmo { get; set; }
+        private int TurretsNum { get; set; }
+        
+        public enum Class
+        {
+            Destroyer,
+            LightCruiser,
+            HeavyCruiser,
+            BattleCruiser,
+            Battleship
+        }
 
-        // Engine
-        public Engine Engine { get; set; }
-        public int AmountOfFuel { get; set; }
+        // Constructor
+        public Ship(string name, Class shipClass, Hull hull, Turret turret, int turretsNum)
+        {
+            Name = name;
+            ShipClass = shipClass;
+            IsCapital = GenerateRole();
+            Hull = hull;
+            Turret = turret;
+            TotalAmmo = turretsNum * turret.GetAmmo();
+            TurretsNum = turretsNum;
+        }
 
-        // Torpedoes
-        public bool HasTorpedoes { get; set; }
-        public TorpedoLauncher TorpedoLauncher { get; set; }
-        public int AmountOfTorpedoes { get; set; }
-
-        // Turrets
-        public Turret Turret { get; set; }
-        public int AmountOfTurrets { get; set; }
-        public int TotalAmountOfShells { get; set; }
-
-        // Sonar
-        public bool HasSonar { get; set; }
-        public Sonar Sonar { get; set; }
-
-        // Balistic computer
-        public bool HasBalisticComputer { get; set; }
-        public BalisticComputer BalisticComputer { get; set; }
-
-        // ASW
-        public bool CapableOfAsw { get; set; }
-        public AntiSubmarineWarfare AntiSubmarineWarfare { get; set; }
+        // Methods
+        public void SetId(int shipId)
+        {
+            Id = shipId;
+        }
+        private bool GenerateRole()
+        {
+            if (ShipClass == Class.BattleCruiser || ShipClass == Class.Battleship)
+                return true;
+            else
+                return false;
+        }
+        public bool GetIsCapital() => IsCapital;
+        public bool GetName() => IsCapital;
+        public int GetId() => Id;
+        public string ShowData()
+        {
+            return $"Id: {Id}\nName: {Name}\nShipClass: {ShipClass}\nIsCapital: {IsCapital}\nHull: {Hull.ShowData()}\nTurret: {Turret.ShowData()}\nTotalAmmo: {TotalAmmo}\nTurretsNum: {TurretsNum}\n";
+        }
     }
 }

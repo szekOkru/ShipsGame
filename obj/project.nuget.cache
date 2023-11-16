@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DnX/PgEZRlNdqq8hgwVbmoiWDbENwx3bP9yZT/pQ6bEga2p1jQ4zzlEEDQd+OKrwYbkuRdXfhxZ5Ug6PoY+Q7g==",
+  "dgSpecHash": "pGHl1uBxTI5LmmUww9QETnwlWL7pS2wwWKGXjP01Iv7Qn22pYVTfWDzvRUYhAXXK8jxpxHqgSoKBx/xQ/TLnbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jakub-komputer\\source\\repos\\Ships\\Ships\\Ships.csproj",
+  "projectFilePath": "C:\\GitRepository\\Ships.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

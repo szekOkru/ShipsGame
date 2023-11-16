@@ -1,0 +1,15 @@
+C:\GitRepository\bin\Debug\net7.0\Ships.exe
+C:\GitRepository\bin\Debug\net7.0\Ships.deps.json
+C:\GitRepository\bin\Debug\net7.0\Ships.runtimeconfig.json
+C:\GitRepository\bin\Debug\net7.0\Ships.dll
+C:\GitRepository\bin\Debug\net7.0\Ships.pdb
+C:\GitRepository\obj\Debug\net7.0\Ships.csproj.AssemblyReference.cache
+C:\GitRepository\obj\Debug\net7.0\Ships.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepository\obj\Debug\net7.0\Ships.AssemblyInfoInputs.cache
+C:\GitRepository\obj\Debug\net7.0\Ships.AssemblyInfo.cs
+C:\GitRepository\obj\Debug\net7.0\Ships.csproj.CoreCompileInputs.cache
+C:\GitRepository\obj\Debug\net7.0\Ships.dll
+C:\GitRepository\obj\Debug\net7.0\refint\Ships.dll
+C:\GitRepository\obj\Debug\net7.0\Ships.pdb
+C:\GitRepository\obj\Debug\net7.0\Ships.genruntimeconfig.cache
+C:\GitRepository\obj\Debug\net7.0\ref\Ships.dll
